@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ribatebalelo.github.io/WEB-DEV-POE-Part-3/sitemap.xml
+

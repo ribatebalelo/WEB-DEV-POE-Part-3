@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a doctor appointment at HealthCare+ in Nelspruit. Choose a doctor, date, and time slot." />
+  <meta name="keywords" content="book appointment, doctor booking, healthcare booking" />
+  <link rel="canonical" href="https://ribatebalelo.github.io/WEB-DEV-POE-Part-3/book.html" />
+  <title>HealthCare+ | Book Appointment</title>
+  <link rel="icon" href="Images\logo.jpg" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images\logo.jpg" alt="logo" height="50" width="50" class="rounded-circle me-2">
+        <span class="fw-bold">HealthCare+</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="doctors.html">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="book.html">Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Book an Appointment</h1>
+
+    <form class="card">
+      <label>Choose Doctor
+        <select id="selectDoctor" required>
+          <option value="">-- Select a Doctor --</option>
+          <option value="dr_smith">Dr. Thabo Maseko (Primary Care Physician)</option>
+          <option value="dr_lee">Dr. Nokuthula Dlamini(Pediatrician)</option>
+          <option value="dr_patel">Dr. Sipho Nkosi(Cardiologist)</option>
+          <option value="dr_garcia">Dr. Lerato Molefe(Neurologist)</option>
+          <option value="dr_garcia">Dr. Themba Khumalo(Orthopedic Surgeon)</option>
+          <option value="dr_garcia">Dr. Zanele Mthembu(Dermatologist)</option>
+          <option value="dr_garcia">Dr. Kgosi Ramaphosa(Internal Medicine)</option>
+          <option value="dr_garcia">Dr. Amahle Zulu(Gynecologist)</option>
+        </select>
+      </label>
+      
+      <label>Select Date
+        <input type="date" id="inputDate" required />
+      </label>
+      
+      <label>Select Time Slot
+        <div class="slots">
+          <input type="radio" id="slot1" name="timeSlot" class="slot-radio" value="09:00" required>
+          <label for="slot1" class="slot">09:00</label>
+          
+          <input type="radio" id="slot2" name="timeSlot" class="slot-radio" value="10:00">
+          <label for="slot2" class="slot">10:00</label>
+          
+          <input type="radio" id="slot3" name="timeSlot" class="slot-radio" value="11:00">
+          <label for="slot3" class="slot">11:00</label>
+          
+          <input type="radio" id="slot4" name="timeSlot" class="slot-radio" value="14:00">
+          <label for="slot4" class="slot">14:00</label>
+          
+          <input type="radio" id="slot5" name="timeSlot" class="slot-radio" value="15:00">
+          <label for="slot5" class="slot">15:00</label>
+          
+          <input type="radio" id="slot6" name="timeSlot" class="slot-radio" value="16:00">
+          <label for="slot6" class="slot">16:00</label>
+        </div>
+      </label>
+      
+      <button type="submit" class="btn btn-primary">Confirm Appointment</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>HealthCare+</h3>
+          <p>Providing exceptional healthcare services with compassion, innovation, and excellence since 2010.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="doctors.html">Find a Doctor</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Primary Care</li>
+            <li>Pediatrics</li>
+            <li>Cardiology</li>
+            <li>Neurology</li>
+            <li>Orthopedics</li>
+            <li>Dermatology</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>📍 Hope Street, Nelspruit, Mpumalanga</p>
+          <p>📞 +27 13 741 0000</p>
+          <p>✉️ info@healthcareplus.co.za</p>
+          <p>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 HealthCare+. All rights reserved.</p>
+       
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
