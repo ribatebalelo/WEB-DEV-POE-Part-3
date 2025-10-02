@@ -1,7 +1,4 @@
 # HealthCare+ Website
-
-Got it! Here’s the **full polished README.md** for your **Doctors Appointment Website**, with a concise explanatory change log, consistent IIE Harvard-style in-text citations, and reference list. Everything is integrated into a single, professional document ready for GitHub.
-
 ---
 ## Project Overview
 
