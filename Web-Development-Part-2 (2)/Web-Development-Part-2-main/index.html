@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HealthCare+ provides primary care, pediatrics, cardiology, neurology, orthopedics, dermatology and online appointment booking in Nelspruit, South Africa." />
+  <meta name="keywords" content="healthcare, doctors, clinic, Nelspruit, book appointment, primary care, pediatrics, cardiology, neurology, orthopedics, dermatology" />
+  <link rel="canonical" href="https://example.com/index.html" />
+  <title>HealthCare+ | Home</title>
+  <link rel="icon" href="Images\logo.jpg" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images\logo.jpg" alt="logo" height="50" width="50" class="rounded-circle me-2">
+        <span class="fw-bold">HealthCare+</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="doctors.html">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container home">
+    
+    <section class="hero">
+      <h1>Book your doctor appointments online</h1>
+      <p>Fast, simple, and secure. Access our healthcare system anytime, anywhere.</p>
+      <div class="hero-cta">
+        <a href="doctors.html" class="btn btn-primary">Find a Doctor</a>
+        <a href="book.html" class="btn btn-outline">Book Now</a>
+      </div>
+    </section>
+    <h1 class="page-title">Welcome to HealthCare+</h1>
+
+    <section class="features">
+      <div class="feature">
+        <img src="Images\icons8-baby-64.png" alt="Primary Care" class="feature-icon" />
+        <h3>Primary Care</h3>
+        <p>Comprehensive health assessments, routine check-ups, and preventive care to maintain your overall well-being.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/external-coco-line-kalash/32/external-pediatrics-human-body-anatomy-coco-line-kalash.png" alt="Pediatrics" class="feature-icon" />
+        <h3>Pediatrics</h3>
+        <p>Specialized care for children from birth through adolescence, ensuring healthy growth and development.</p>
+      </div>
+      <div class="feature">
+        <img src="Images\icons8-cardiology-68.png" alt="Cardiology" class="feature-icon" />
+        <h3>Cardiology</h3>
+        <p>Expert heart care including diagnosis, treatment, and prevention of cardiovascular diseases.</p>
+      </div>
+      <div class="feature">
+        <img src="Images\icons8-neurology-68.png" alt="Neurology" class="feature-icon" />
+        <h3>Neurology</h3>
+        <p>Specialized care for disorders of the nervous system, including brain, spine, and nerve conditions.</p>
+      </div>
+      <div class="feature">
+        <img src="Images\icons8-orthopedics-68.png" alt="Orthopedics" class="feature-icon" />
+        <h3>Orthopedics</h3>
+        <p>Comprehensive care for musculoskeletal conditions, injuries, and joint problems.</p>
+      </div>
+      <div class="feature">
+        <img src="Images\icons8-dermatology-68.png" alt="Dermatology" class="feature-icon" />
+        <h3>Dermatology</h3>
+        <p>Expert skin care including diagnosis and treatment of skin conditions and cosmetic procedures.</p>
+      </div>
+    </section>
+
+    <section class="getting-started card">
+      <h2>Getting Started</h2>
+      <ol>
+        <li>Browse our qualified doctors and view their specialties.</li>
+        <li>Check real-time availability for your preferred date and time.</li>
+        <li>Book your appointment with instant confirmation.</li>
+        <li>Receive notifications and manage your healthcare journey.</li>
+      </ol>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="grid">
+        <div class="contact-form card">
+          <h2>Contact Us</h2>
+          <p>Have questions or need assistance? Send us a message and we'll get back to you as soon as possible.</p>
+          
+          <form class="form" id="contactForm">
+            <div class="form-row">
+              <label for="name">
+                Full Name *
+                <input type="text" id="name" name="name" required>
+              </label>
+              <label for="email">
+                Email Address *
+                <input type="email" id="email" name="email" required>
+              </label>
+            </div>
+            
+            <label for="subject">
+              Subject *
+              <input type="text" id="subject" name="subject" required>
+            </label>
+            
+            <label for="message">
+              Message *
+              <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry..."></textarea>
+            </label>
+            
+            <button type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info card">
+          <h2>Visit Us</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <h3>📍 Address</h3>
+              <p>Hope Street<br>Nelspruit, Mpumalanga<br>South Africa</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>📞 Phone</h3>
+              <p>+27 13 741 0000</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>✉️ Email</h3>
+              <p>info@healthcareplus.co.za</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>🕒 Hours</h3>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+              Saturday: 9:00 AM - 2:00 PM<br>
+              Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container card">
+        <h2>Our Location</h2>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1234567890123!2d30.9701!3d-25.4753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eea3b7b7b7b7b7b%3A0x1eea3b7b7b7b7b7b!2sHope+Street%2C+Nelspruit%2C+South+Africa!5e0!3m2!1sen!2sza!4v1234567890123"
+            width="100%" 
+            height="400" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>HealthCare+</h3>
+          <p>Providing exceptional healthcare services with compassion, innovation, and excellence since 2010.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="doctors.html">Find a Doctor</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Primary Care</li>
+            <li>Pediatrics</li>
+            <li>Cardiology</li>
+            <li>Neurology</li>
+            <li>Orthopedics</li>
+            <li>Dermatology</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>📍 Hope Street, Nelspruit, Mpumalanga</p>
+          <p>📞 +27 13 741 0000</p>
+          <p>✉️ info@healthcareplus.co.za</p>
+          <p>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 HealthCare+. All rights reserved. </p>
+     
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet HealthCare+ doctors: primary care, pediatrics, cardiology, neurology, orthopedics, dermatology with booking links." />
+  <meta name="keywords" content="doctors, specialists, book doctor, Nelspruit clinic" />
+  <link rel="canonical" href="https://example.com/doctors.html" />
+  <title>HealthCare+ | Doctors</title>
+  <link rel="icon" href="Images\logo.jpg" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images\logo.jpg" alt="logo" height="50" width="50" class="rounded-circle me-2">
+        <span class="fw-bold">HealthCare+</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="doctors.html">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Our Doctors</h1>
+    <div id="doctorFilters" class="filters card">
+      <input type="text" id="filterQuery" placeholder="Search by name or specialty" />
+      <select id="filterAvailability">
+        <option value="all">Any Availability</option>
+        <option value="today">Available Today</option>
+        <option value="week">This Week</option>
+      </select>
+    </div>
+
+    <div id="doctorsGrid" class="grid">
+      <div class="doctor-card card">
+        <img src="Images\Thabo.jpeg" alt="Dr. Thabo Maseko" class="doctor-image" />
+        <div class="doctor-info">
+          <h3>Dr. Thabo Maseko</h3>
+          <p class="specialty">Primary Care Physician</p>
+          <p class="experience">15+ years experience</p>
+          <p class="availability available">Available Today</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\Nokthula.jpg" alt="Dr. Nokuthula Dlamini" class="doctor-image" height="200px" width="350px"/>
+        <div class="doctor-info">
+          <h3>Dr. Nokuthula Dlamini</h3>
+          <p class="specialty">Pediatrician</p>
+          <p class="experience">12+ years experience</p>
+          <p class="availability available">Available This Week</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\Sipho.jpg" alt="Dr. Sipho Nkosi" class="doctor-image" height="200px" width="300px"/>
+        <div class="doctor-info">
+          <h3>Dr. Sipho Nkosi</h3>
+          <p class="specialty">Cardiologist</p>
+          <p class="experience">18+ years experience</p>
+          <p class="availability available">Available Today</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\Lerato.webp" alt="Dr. Lerato Molefe" class="doctor-image" height="200px" width="300px" />
+        <div class="doctor-info">
+          <h3>Dr. Lerato Molefe</h3>
+          <p class="specialty">Neurologist</p>
+          <p class="experience">14+ years experience</p>
+          <p class="availability available">Available This Week</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\Themba.avif" alt="Dr. Themba Khumalo" class="doctor-image themba" />
+        <div class="doctor-info">
+          <h3>Dr. Themba Khumalo</h3>
+          <p class="specialty">Orthopedic Surgeon</p>
+          <p class="experience">16+ years experience</p>
+          <p class="availability available">Available Today</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\zanele.jpg" alt="Dr. Zanele Mthembu" class="doctor-image"  height="200px" width="300px" />
+        <div class="doctor-info">
+          <h3>Dr. Zanele Mthembu</h3>
+          <p class="specialty">Dermatologist</p>
+          <p class="experience">11+ years experience</p>
+          <p class="availability available">Available This Week</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\kgosi.png" alt="Dr. Kgosi Ramaphosa" class="doctor-image"  height="200px" width="300px"/>
+        <div class="doctor-info">
+          <h3>Dr. Kgosi Ramaphosa</h3>
+          <p class="specialty">Internal Medicine</p>
+          <p class="experience">13+ years experience</p>
+          <p class="availability available">Available Today</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card card">
+        <img src="Images\Amahle.avif" alt="Dr. Amahle Zulu" class="doctor-image"  height="400px" width="300px"/>
+        <div class="doctor-info">
+          <h3>Dr. Amahle Zulu</h3>
+          <p class="specialty">Gynecologist</p>
+          <p class="experience">10+ years experience</p>
+          <p class="availability available">Available This Week</p>
+          <div class="doctor-actions">
+            <a href="book.html" class="btn btn-primary">Book Appointment</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>HealthCare+</h3>
+          <p>Providing exceptional healthcare services with compassion, innovation, and excellence since 2010.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="doctors.html">Find a Doctor</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Primary Care</li>
+            <li>Pediatrics</li>
+            <li>Cardiology</li>
+            <li>Neurology</li>
+            <li>Orthopedics</li>
+            <li>Dermatology</li>
+          </ul>
+        </div>
+        
+        <div id="footer-section">
+          <h4>Contact Info</h4>
+          <p>📍 Hope Street, Nelspruit, Mpumalanga</p>
+          <p>📞 +27 13 741 0000</p>
+          <p>✉️ info@healthcareplus.co.za</p>
+          <p>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 HealthCare+. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
